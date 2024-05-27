@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+    </head>
+
+    <body>
+        <table border = 1>
+            {% for key, value in result.items() %}   <!--the expression between the currly braces is also known as the jinja template-->
+                <tr>
+                    <th>{{key}}</th>
+                    <td>{{value}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
